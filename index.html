@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Me: Nick Derby</title>
+	<link rel="stylesheet" href="stylesheet.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<!-- This is my js 01 webpage -->
+<body>
+
+    <h1>About Me</h1>
+
+        <div id="piano">
+            <img id="piano-img" src="piano_photo_nick.jpg">
+            <br>
+            This is me performing at the Concert Festival in Carnegie Hall.
+        </div>
+
+        <p>Hello! My name is Nick Derby and I am a '24 at Dartmouth College. I am originally from Darien, CT.</p>
+        <p>In my free time, I enjoy playing the piano. My favorite composers are Chopin and Liszt.
+          I also play tennis, and I've competed in USTA tennis tournaments since I was 8 years old.</p>
+
+        <iframe width="560" height="315"
+          src="https://www.youtube.com/embed/xjsM1gTx1fc" title="Fantaisie-Impromptu" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+
+        <p>This is me playing Chopin's Fantaisie Impromptu in my Junior year of high school.</p>
+        <p><a href="https://www.youtube.com/channel/UCkZDoY8U5ybgOl9W1keso5A">You can view some more of my piano videos here.</a></p>
+
+    <h3 id="places">List of Countries I've Visited <span style="font-weight:normal">(click to show)</span></h3>
+
+        <div id="spain">
+            <img id="spain-img" src="the_profile_photo.png">
+            <br>
+            This is me on vacation in Girona, Spain in 2018.
+        </div>
+
+        <ul hidden id="places">
+            <li><b><em>UK</em></b></li>
+            <li><b>US</b></li>
+            <li>Italy</li>
+            <li>France</li>
+            <li>Switzerland</li>
+            <li>Russia</li>
+            <li>Canada</li>
+            <li>Barbados</li>
+            <li>Spain</li>
+        </ul>
+
+        <p hidden id="places">I have lived in the US and UK.
+        <br> I was born in the UK.
+        </p>
+
+        <script>
+            $("h3#places").click(
+                function() {
+                    $("ul#places").toggle();
+                    $("p#places").toggle();
+                });
+        </script>
+
+</body>
+
+</html>
